@@ -71,3 +71,21 @@ func hasAnyMatch(_ numbers: [Int], _ condition: (Int) -> Bool) -> Bool {
 }
 
 hasAnyMatch([12, 19, 18, 10, 8], lessThanTen)
+
+//Closure
+let numbers = [2, 4, 6, 10, 8, 1]
+let rs = numbers.map({ (ele: Int) -> Int in
+    let rs = ele * 3
+    return rs
+})
+print(rs)
+
+//return 0 for all odd number
+let numbers2 = [10, 8, 2, 4, 6, 1, 0, 3, 5]
+let rs2 = numbers2.map({ (ele: Int) -> Int in
+    if ele % 2 == 0 {
+        return 0
+    }
+    return ele
+})
+print(rs2)

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BauCua" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="left.png" translatesAutoresizingMaskIntoConstraints="NO" id="emT-c6-SgC" userLabel="Left">
+                                <rect key="frame" x="522" y="192" width="183" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="right.png" translatesAutoresizingMaskIntoConstraints="NO" id="aBg-M2-Sdh" userLabel="Right">
+                                <rect key="frame" x="541" y="297" width="177" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLe-bD-wo2" userLabel="trai">
+                                <rect key="frame" x="0.0" y="76.5" width="222.5" height="222.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bau.png" translatesAutoresizingMaskIntoConstraints="NO" id="xuJ-KO-CWW" userLabel="img1">
+                                        <rect key="frame" x="55.5" y="55.5" width="111.5" height="111.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="xuJ-KO-CWW" secondAttribute="height" multiplier="1:1" id="hBr-YZ-QcR"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xuJ-KO-CWW" firstAttribute="centerX" secondItem="hLe-bD-wo2" secondAttribute="centerX" id="0IZ-up-UIL"/>
+                                    <constraint firstItem="xuJ-KO-CWW" firstAttribute="centerY" secondItem="hLe-bD-wo2" secondAttribute="centerY" id="GNL-ZT-fYn"/>
+                                    <constraint firstItem="xuJ-KO-CWW" firstAttribute="width" secondItem="hLe-bD-wo2" secondAttribute="width" multiplier="1:2" id="RKk-aF-IVg"/>
+                                    <constraint firstAttribute="width" secondItem="hLe-bD-wo2" secondAttribute="height" multiplier="1:1" id="bFX-P8-MIQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpd-qT-wHY" userLabel="giua">
+                                <rect key="frame" x="222.5" y="76.5" width="222.5" height="222"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cua.png" translatesAutoresizingMaskIntoConstraints="NO" id="EEF-FE-CZd" userLabel="img2">
+                                        <rect key="frame" x="55.5" y="55.5" width="111.5" height="111.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="EEF-FE-CZd" secondAttribute="height" multiplier="1:1" id="i7O-Xm-v6r"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hpd-qT-wHY" secondAttribute="height" multiplier="1:1" id="FPk-Hd-Tf9"/>
+                                    <constraint firstItem="EEF-FE-CZd" firstAttribute="width" secondItem="hpd-qT-wHY" secondAttribute="width" multiplier="1:2" id="M83-qH-KU0"/>
+                                    <constraint firstItem="EEF-FE-CZd" firstAttribute="centerY" secondItem="hpd-qT-wHY" secondAttribute="centerY" id="TaA-5W-u3z"/>
+                                    <constraint firstItem="EEF-FE-CZd" firstAttribute="centerX" secondItem="hpd-qT-wHY" secondAttribute="centerX" id="tql-qd-yLi"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uzr-zS-FhP" userLabel="phai">
+                                <rect key="frame" x="444.5" y="76.5" width="222.5" height="222"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ga.png" translatesAutoresizingMaskIntoConstraints="NO" id="J4v-Ho-Fri" userLabel="img3">
+                                        <rect key="frame" x="55.5" y="55.5" width="111.5" height="111.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="J4v-Ho-Fri" secondAttribute="height" multiplier="1:1" id="7HV-EF-KgK"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="J4v-Ho-Fri" firstAttribute="width" secondItem="Uzr-zS-FhP" secondAttribute="width" multiplier="1:2" id="0ZT-h1-7lj"/>
+                                    <constraint firstItem="J4v-Ho-Fri" firstAttribute="centerX" secondItem="Uzr-zS-FhP" secondAttribute="centerX" id="MuY-d0-PMn"/>
+                                    <constraint firstAttribute="width" secondItem="Uzr-zS-FhP" secondAttribute="height" multiplier="1:1" id="XYI-P0-1jn"/>
+                                    <constraint firstItem="J4v-Ho-Fri" firstAttribute="centerY" secondItem="Uzr-zS-FhP" secondAttribute="centerY" id="gZL-6A-Qj0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hLe-bD-wo2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6ti-ma-Pmt"/>
+                            <constraint firstItem="Uzr-zS-FhP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="7B7-hl-ns1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uzr-zS-FhP" secondAttribute="trailing" id="9gJ-xv-7r1"/>
+                            <constraint firstItem="hpd-qT-wHY" firstAttribute="leading" secondItem="hLe-bD-wo2" secondAttribute="trailing" id="I5u-Tj-bBp"/>
+                            <constraint firstItem="hLe-bD-wo2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="Rz6-ax-cj7"/>
+                            <constraint firstItem="Uzr-zS-FhP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Uzq-Dr-u3E"/>
+                            <constraint firstItem="hLe-bD-wo2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Zou-J9-QMC"/>
+                            <constraint firstItem="hpd-qT-wHY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="m1Y-xv-oTx"/>
+                            <constraint firstItem="hpd-qT-wHY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="tup-1f-eIh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="img1" destination="xuJ-KO-CWW" id="X0w-Fp-Nhv"/>
+                        <outlet property="img2" destination="EEF-FE-CZd" id="Fws-0G-vB4"/>
+                        <outlet property="img3" destination="J4v-Ho-Fri" id="q5j-zL-uwn"/>
+                        <outlet property="imgLeft" destination="emT-c6-SgC" id="nQb-aF-31C"/>
+                        <outlet property="imgRight" destination="aBg-M2-Sdh" id="IQK-MV-6YD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.833583208395808" y="16.800000000000001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bau.png" width="130" height="129"/>
+        <image name="cua.png" width="129" height="128"/>
+        <image name="ga.png" width="128" height="128"/>
+        <image name="left.png" width="617" height="704"/>
+        <image name="right.png" width="617" height="704"/>
+    </resources>
+</document>
